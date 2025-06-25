@@ -210,6 +210,6 @@ If you encounter any issues or have questions:
 
 ---
 
-**Built with ❤️ by [Your Name]**
+**Built with ❤️ by Naveen**
 
 *Stay informed, stay prepared with SkyPulse Weather App!*
