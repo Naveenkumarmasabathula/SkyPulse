@@ -54,12 +54,12 @@ const WeatherForecast = ({data}:WeatherForecastProps) => {
             {nextDays.map((day) => {
               return (
                 <div key={day.date} 
-                  className="grid grid-cols-3 items-center gap-4 rounded-lg border p-4">
+                  className="grid  lg:grid-cols-3 items-center gap-4 rounded-lg border p-4">
                   <div>
                     <p className="font-medium">{format(new Date(day.date * 1000), 'EEE, MMM d')}</p>
                     <p className="text-sm text-muted-foreground">{day.weather.description}</p>
                   </div>
-                  <div className="flex justify-center gap-4">
+                  <div className="flex lg:justify-end gap-4">
                     <span className="flex items-center text-blue-500">
                       <ArrowDown className="h-4 w-4 mr-1" />
                       {formatTemp(day.temp_min)}
@@ -69,7 +69,7 @@ const WeatherForecast = ({data}:WeatherForecastProps) => {
                       {formatTemp(day.temp_max)}
                     </span>
                   </div>
-                  <div className="flex justify-end gap-4">
+                  <div className="hidden lg:flex justify-end gap-4">
                     <span className="flex items-center gap-1">
                       <Droplets className="h-4 w-4 text-blue-500" />
                       <span className="text-sm">{day.humidity}%</span>
